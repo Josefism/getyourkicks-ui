@@ -63,6 +63,8 @@ body {
   background-size: contain;
   background-repeat: repeat-x;
   margin-bottom: 50px;
+  height: 255px;
+  width: 100vw;
 }
 
 .banner-img img {
