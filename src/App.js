@@ -400,7 +400,7 @@ function Home() {
           Mint 4 HiTops
         </button>
         <h3>5 Get Your Kicks HiTops @ 5 MATIC each</h3>
-        <p className='discount-note'>50% off per elf! <em>Best Deal!</em></p>
+        <p className='discount-note'>50% off per hitop! <em>Best Deal!</em></p>
         <p className="about-note"><strong>25 MATIC</strong> total + ~ 0.01 MATIC gas</p>
         <button onClick={mintFiveNftHandler} className='cta-button mint-nft-button'>
           Mint 5 HiTops
