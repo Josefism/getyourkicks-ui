@@ -1,0 +1,6 @@
+[{
+    "access-control-allow-origin": ["http://localhost:8080", "https://getyourkicks.herokuapp.com", "https://www.test-cors.org"],
+    "responseHeader": ["Content-Type"],
+    "method": ["GET", "HEAD"],
+    "maxAgeSeconds": 1800
+}]
