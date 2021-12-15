@@ -15,7 +15,7 @@ const enviro = runtimeEnv();
 const contractOwner = process.env.REACT_APP_GYKHT_CONTRACT_OWNER || enviro.REACT_APP_GYKHT_CONTRACT_OWNER;
 const imgBase = process.env.REACT_APP_GYKHT_IMG_BASE || enviro.REACT_APP_GYKHT_IMG_BASE;
 const metadataBase = process.env.REACT_APP_GYKHT_META_BASE || enviro.REACT_APP_GYKHT_META_BASE;
-const contractAddress = "0xb2Db3B3A3b305447b5F84207ff42c5ECC0fb42c6";
+const contractAddress = "0x6D5928245A9F5df381b70cfbBD5c8121805E6fAB";
 const abi = contract.abi;
 
 function App() {
@@ -120,7 +120,7 @@ function Home() {
         console.log("Mining ... please wait.");
         await nftTxn.wait();
 
-        console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
         setMineStatus('success');
       } else {
         setMineStatus('error');
@@ -151,7 +151,7 @@ function Home() {
         console.log("Mining ... please wait.");
         await nftTxn.wait();
 
-        console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
         setMineStatus('success');
       } else {
         setMineStatus('error');
@@ -182,7 +182,7 @@ function Home() {
         console.log("Mining ... please wait.");
         await nftTxn.wait();
 
-        console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
         setMineStatus('success');
       } else {
         setMineStatus('error');
@@ -213,7 +213,7 @@ function Home() {
         console.log("Mining ... please wait.");
         await nftTxn.wait();
 
-        console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
         setMineStatus('success');
       } else {
         setMineStatus('error');
@@ -244,7 +244,7 @@ function Home() {
         console.log("Mining ... please wait.");
         await nftTxn.wait();
 
-        console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+        console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
         setMineStatus('success');
       } else {
         setMineStatus('error');
@@ -274,7 +274,7 @@ function Home() {
           console.log("Mining ... please wait.");
           await nftTxn.wait();
   
-          console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+          console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
           setMineStatus('success');
         } else {
           setMineStatus('error');
@@ -303,7 +303,7 @@ function Home() {
           console.log("Mining ... please wait.");
           await nftTxn.wait();
   
-          console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+          console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
           setMineStatus('withdrawsuccess');
         } else {
           setMineStatus('withdrawerror');
@@ -332,7 +332,7 @@ function Home() {
           console.log("Mining ... please wait.");
           await nftTxn.wait();
   
-          console.log(`Mined, see transaction: https://mumbai.polygonscan.com/tx/${nftTxn.hash}`);
+          console.log(`Mined, see transaction: https://polygonscan.com/tx/${nftTxn.hash}`);
           setMineStatus('presaleclosesuccess');
         } else {
           setMineStatus('presalecloseerror');
@@ -400,7 +400,7 @@ function Home() {
           Mint 4 HiTops
         </button>
         <h3>5 Get Your Kicks HiTops @ 5 MATIC each</h3>
-        <p className='discount-note'>50% off per elf! <em>Best Deal!</em></p>
+        <p className='discount-note'>50% off per hitop! <em>Best Deal!</em></p>
         <p className="about-note"><strong>25 MATIC</strong> total + ~ 0.01 MATIC gas</p>
         <button onClick={mintFiveNftHandler} className='cta-button mint-nft-button'>
           Mint 5 HiTops
@@ -454,7 +454,7 @@ function Home() {
               {mineStatus === 'success' && <div className={mineStatus}>
                 <p>NFT minting successful!</p>
                 <p className='success-link'>
-                  <a href={`https://testnets.opensea.io/${currentAccount}/`} target='_blank' rel='noreferrer'>Click here</a>
+                  <a href={`https://opensea.io/${currentAccount}/`} target='_blank' rel='noreferrer'>Click here</a>
                   <span> to view your NFT on OpenSea.</span>
                 </p>
               </div>}
@@ -493,7 +493,7 @@ function KicksData() {
   let kicksIdErr = false;
   let imgUrl = "https://storage.googleapis.com/getyourkicks.assemblystudio.com/hitops/images/images";
   let metaUrl = "https://storage.googleapis.com/getyourkicks.assemblystudio.com/hitops/metadata/metadata/";
-  let openseaKicksLink = "https://testnets.opensea.io/assets/mumbai/" + contractAddress + "/";
+  let openseaKicksLink = "https://opensea.io/assets/matic/" + contractAddress + "/";
   let kicksAttr = [];
 
   try {
